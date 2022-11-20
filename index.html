@@ -27,13 +27,14 @@
             <div class="errorMax"></div>
             <div class="data">
                 <label for="name">Owner's name<span>*</span></label>
-                <input type="text" id="name" minlength="3" maxlength="10" placeholder="owner's name" required />
+                <input type="text" id="name" minlength="3" maxlength="10" placeholder="owner's name" pattern='\w+\s+\w+'
+                    required />
             </div>
 
 
             <div class="data">
                 <label for="phone">Contacts<span>*</span></label>
-                <input type="number" id="phone" placeholder="phone number" pattern="\d+" required />
+                <input type="tel" id="phone" placeholder="phone number" pattern="\d+" required />
             </div>
 
             <div class="data">
