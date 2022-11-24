@@ -49,11 +49,11 @@
             <label for="breed">Breed</label>
             <select name="breed" id="breed" required>
                 <option value="Choose breed" disabled selected="selected">Choose breed</option>
-                <option value="1">Munchkin</option>
-                <option value="2">Turkish Angora</option>
-                <option value="3">Persian</option>
-                <option value="4">Pooch</option>
-                <option value="5">Other</option>
+                <option value="Munchkin">Munchkin</option>
+                <option value="Turkish Angora">Turkish Angora</option>
+                <option value="Persian">Persian</option>
+                <option value="Pooch">Pooch</option>
+                <option value="Other">Other</option>
             </select>
         </div>
 
@@ -61,16 +61,19 @@
             <div>
                 <label for="feed">Feed</label>
             </div>
-            <div><input type="checkbox" name="feed" /> Dry food</div>
-            <div><input type="checkbox" name="feed" /> Wet food</div>
-            <div><input type="checkbox" name="feed" /> Natural food</div>
+            <div><input type="checkbox" name="feed" value="Dry food" /> Dry food</div>
+            <div><input type="checkbox" name="feed" value="Wet food" /> Wet food</div>
+            <div><input type="checkbox" name="feed" value="Natural food" /> Natural food</div>
         </div>
 
         <div class="cat-sex">
             <label for="gender">Pet's gender</label>
             <br>
-            <input type="radio" name="gender" id="female" required />Female<br>
-            <input type="radio" name="gender" id="male" />Male<br>
+
+            <input type="radio" name="gender" id="female" value="0" required checked /><label class="gender"
+                for="female">Female</label><br>
+            <input type="radio" name="gender" id="male" value="1" /><label class="gender" for="male">Male</label>
+            <br>
         </div>
 
         <div class="comment">
@@ -79,7 +82,7 @@
                 placeholder="If you want to add smth about your pet, you can text it here😊"></textarea>
         </div>
 
-        <button class="button">Save</button>
+        <button type="button" class="button" onclick="checkForm()">Save</button>
     </form>
     <!-- <div class="catImage">
             <div>
